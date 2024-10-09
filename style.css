@@ -58,8 +58,8 @@ h1 {
     border: none;
     border-radius: 28px;
     text-decoration: none;
-    font-size: clamp(1.4rem, 2vw + 0.8rem, 2rem);
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.61); /* Skugga */
+    font-size: clamp(1.4rem, 2vw + 0.7rem, 2rem);
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.61); /* Skugga */
 }
 
 .button:hover {
