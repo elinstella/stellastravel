@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: calc(100vh - 70px); /* Anpassad höjd för padding */
+    padding: 30px; /* Padding skapar inre mellanrum */
+    border-radius: 20px; /* Rundade kanter */
+    overflow: hidden; /* Dölj överflödig bild */
+    margin: 30px ; /* Lägger till margin-top, men ej nedre för att behålla centrerad layout */
+}
+
+
+.bg-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gör bilden responsiv */
+    z-index: -1; /* Sätt bilden bakom texten */
+    transform: translate(-50%, -50%); /* Centrera bilden */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrera innehållet horisontellt */
+    justify-content: center; /* Centrera innehållet vertikalt */
+    height: 100%; /* Full höjd */
+    color: #d9e1bf; /* Textfärg */
+    text-align: center; /* Centrera text */
+    position: relative; /* För att hålla innehållet i rätt position */
+    z-index: 1; /* Sätt över bilden */
+}
+
+h1 {
+    margin-bottom: 37px; /* Avstånd mellan H1 och knappen */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px; 
+    font-size: clamp(1.5rem, 4vw + 1rem, 5.5rem); /* Storlek på H1 */
+    text-shadow: 1px 6px 6px rgb(0, 0, 0); /* Lägg till textskugga */
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: #198880; /* Bakgrundsfärg */
+    color: #f2f8e3 ; /* Textfärg på knappen */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px; 
+    border: none;
+    border-radius: 28px;
+    text-decoration: none;
+    font-size: clamp(1.4rem, 2vw + 0.8rem, 2rem);
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.61); /* Skugga */
+}
+
+.button:hover {
+    background-color: #0e665f; /* Ändra bakgrundsfärg vid hover */
+    color:  #f2f8e3; /* Ändra textfärg vid hover */
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.7); /* Större skugga vid hover */
+}
+
+
+
+@media (max-width: 600px) {
+    .button {
+        font-size: 14px; /* Mindre text på knappen för mobiler */
+    }
+
+    .icon {
+        font-size: 20px; /* Mindre ikoner för mobiler */
+    }
+}
