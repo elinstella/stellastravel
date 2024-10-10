@@ -9,36 +9,36 @@ body {
 }
 
 header {
-    display: flex; /* Gör headern till en flex-container */
-    flex-direction: column; /* Låt innehållet ordnas vertikalt */
-    align-items: center; /* Centrera horisontellt */
-    justify-content: center; /* Centrera vertikalt */
-    height: clamp(30vh, 30vh, 30vh); /* Sätt höjd på headern */
-    position: relative; /* För att kunna justera rubriken med positionering */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: clamp(30vh, 30vh, 30vh);
+    position: relative; 
     margin-top: 30px;
 }
 
 .header-image {
-    width: calc(100% - 60px); /* Minska bredden för att ta hänsyn till marginalerna */
-    height: 100%; /* Gör bilden 100% av headerns höjd */
+    width: calc(100% - 60px); 
+    height: 100%; 
     object-fit: cover;
-    border-radius: 20px; /* Rundade kanter */
-    margin: 0; /* Ta bort marginaler */
-    position: absolute; /* Gör bilden absolut positionerad */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Lägg till skugga på headern */
+    border-radius: 20px; 
+    margin: 0; 
+    position: absolute; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .header-title {
-    text-align: center; /* Centrera rubriken */
-    color: #ffffff ; /* Textfärg på knappen */
-    margin: 0; /* Ta bort standardmarginaler */
-    font-weight: bold; /* Fet stil för rubriken */
-    position: relative; /* Positionera rubriken relativt till headern */
-    z-index: 1; /* Se till att rubriken ligger ovanför bilden */
+    text-align: center; 
+    color: #ffffff ; 
+    margin: 0; 
+    font-weight: bold;
+    position: relative; 
+    z-index: 1; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 10px; 
-    font-size: clamp(1.5rem, 4vw + 1rem, 3.5rem); /* Storlek på H1 */
-    text-shadow: 1px 3px 3px rgb(0, 0, 0); /* Lägg till textskugga */
+    font-size: clamp(1.5rem, 4vw + 1rem, 3.5rem); 
+    text-shadow: 1px 3px 3px rgb(0, 0, 0); 
 
 }
 
@@ -48,9 +48,9 @@ header {
 }
 
 .sidebar {
-    width: 1700px; /* Öka bredden på navigeringen */
+    width: 1700px; 
     background-color: #007a79;
-    border-radius: 20px; /* Rundade kanter */
+    border-radius: 20px; 
     color: #fff;
     padding: 30px 10px 0px 10px;
     display: flex;
@@ -74,13 +74,13 @@ header {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 10px; 
-    font-size: clamp(1.2rem, 4vw + 1rem, 0.7rem); /* Storlek på H1 */
-    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.638); /* Lägg till textskugga */
+    font-size: clamp(1.2rem, 4vw + 1rem, 0.7rem); 
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.638); 
 }
 
 .sidebar a:hover {
     background-color: #555;
-    border-radius: 20px; /* Rundade kanter */
+    border-radius: 20px; 
     padding: 0px 15px 0px 15px;
 
 }
@@ -90,8 +90,8 @@ header {
 
 .content {
     flex-grow: 1;
-    padding: 0; /* Om du vill ta bort padding */
-    margin-left: 30px; /* Lägg till ett mellanrum mellan sidebar och content */
+    padding: 0; 
+    margin-left: 30px; 
 }
 
 .image-grid {
@@ -102,8 +102,8 @@ header {
 
 .image-grid img {
     width: 100%;
-    height: 100%; /* Gör bilderna anpassningsbara till hela cellen */
-    object-fit: cover; /* Bevara bildens proportioner */
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 20px;
 }
 
@@ -115,7 +115,7 @@ footer {
     text-align: center;
     font-size: 16px;
     margin: 30px;
-    border-radius: 20px; /* Rundade kanter */
+    border-radius: 20px; 
 }
 
 .footer-container {
@@ -125,7 +125,6 @@ footer {
 }
 
 
-/* Mobil (upp till 600px) */
 @media (max-width: 600px) {
     .header-title {
         font-size: clamp(1.2rem, 4vw + 1rem, 2.5rem);
@@ -134,10 +133,10 @@ footer {
     .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrerar innehållet i container */
+    align-items: center; 
 }
     .sidebar {
-        width: 100%; /* Gör sidebar 100% av skärmens bredd */
+        width: 100%; 
         padding: 20px;
         margin-bottom: 20px;
     }
@@ -146,16 +145,16 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        align-items: center; /* Vertikal centrering av innehållet */
-        justify-items: center; /* Horisontell centrering av innehållet */
-        margin-left: -30px; /* Lägg till ett mellanrum mellan sidebar och content */
+        align-items: center; 
+        justify-items: center; 
+        margin-left: -30px;
 
     }
     
     .image-grid img {
-        max-width: 100%; /* Ser till att bilderna inte överstiger förälderns bredd */
-        height: auto; /* Bevara bildens proportioner */
-        object-fit: cover; /* Anpassa bilden till sin cell */
+        max-width: 100%; 
+        height: auto; 
+        object-fit: cover; 
         border-radius: 20px;
         margin: 0 auto; 
     }
@@ -163,14 +162,14 @@ footer {
     
 }
 
-/* Surfplatta (601px till 900px) */
+
 @media (min-width: 601px) and (max-width: 900px) {
     .header-title {
         font-size: clamp(3rem, 4vw + 1rem, 3rem);
     }
 
     .container {
-        flex-direction: column; /* Ställ in sidebar och content ovanpå varandra */
+        flex-direction: column; 
         margin: 30px;
     }
 
@@ -182,28 +181,28 @@ footer {
     }
 
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* Två kolumner för bilder */
-        margin-left: -30px; /* Lägg till ett mellanrum mellan sidebar och content */
+        grid-template-columns: repeat(2, 1fr); 
+        margin-left: -30px;
 
     }
 
     
 }
 
-/* Mindre laptops (901px till 1200px) */
+
 @media (min-width: 901px) and (max-width: 1200px) {
     .container {
-        margin:  30px; /* Justera marginalerna för mindre skärmar */
+        margin:  30px; 
     }
 
     .sidebar {
-        width: 100%; /* Justera sidebarens bredd för laptops */
+        width: 100%; 
         margin-right: 30px;
     }
 
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* Tre kolumner för bilder */
-        margin-left: -30px; /* Lägg till ett mellanrum mellan sidebar och content */
+        grid-template-columns: repeat(2, 1fr); 
+        margin-left: -30px; 
     }
 }
 
