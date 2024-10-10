@@ -49,7 +49,7 @@ header {
 
 .sidebar {
     width: 1700px; /* Öka bredden på navigeringen */
-    background-color: #56baaf;
+    background-color: #007a79;
     border-radius: 20px; /* Rundade kanter */
     color: #fff;
     padding: 30px 10px 0px 10px;
@@ -62,17 +62,19 @@ header {
 }
 
 .sidebar li {
-    margin: 10px 0;
+    padding: 15px;
+    margin: 0px;
+    
 }
 
 .sidebar a {
     color: #fff;
     text-decoration: none;
-    padding: 40px 15px 0px 15px;
+    padding: 5px 15px 5px 15px;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 10px; 
-    font-size: clamp(1.1rem, 4vw + 1rem, 0.7rem); /* Storlek på H1 */
+    font-size: clamp(1.2rem, 4vw + 1rem, 0.7rem); /* Storlek på H1 */
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.638); /* Lägg till textskugga */
 }
 
@@ -107,38 +109,19 @@ header {
 
 
 footer {
-    background-color: #286a5e;
+    background-color: #007a79;
     color: #fff;
-    padding: 30px 0;
+    padding: 50px 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    margin: 30px;
+    border-radius: 20px; /* Rundade kanter */
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    color: #fff;
-    text-decoration: underline;
 }
 
 
@@ -214,7 +197,7 @@ footer {
     }
 
     .sidebar {
-        width: 250px; /* Justera sidebarens bredd för laptops */
+        width: 100%; /* Justera sidebarens bredd för laptops */
         margin-right: 30px;
     }
 
