@@ -49,7 +49,4 @@ Teknisk beskrivning
 5. Versionshantering
 - Git användes för att hantera projektets versioner, vilket gör det enkelt att spåra ändringar och samarbeta.
 
-Installation och körning
-1. Klona projektet till din lokala dator:
-   ```bash
-   git clone https://github.com/ditt-användarnamn/hemsida.git
+
